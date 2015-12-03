@@ -1,0 +1,34 @@
+<!ENTITY options.title                           "Options">
+
+<!-- Mapping Engine Stuff -->
+<!ENTITY mappingEngine.title                     "Mapping Engine">
+
+<!ENTITY mapService.title                        "Map Service:">
+<!ENTITY mapService.accesskey                    "S">
+
+<!ENTITY mapService.yahoo.title                  "Yahoo!">
+<!ENTITY mapService.yahoo.accesskey              "Y">
+
+<!-- General Config Stuff -->
+<!ENTITY generalConfigs.title                    "General Configs">
+
+<!ENTITY preLoad.title                           "Preload Map">
+<!ENTITY preLoad.accesskey                       "P">
+
+<!ENTITY toolTipMapWidth.title                   "ToolTip Map Width:">
+<!ENTITY toolTipMapWidth.accesskey               "W">
+<!ENTITY toolTipMapHeight.title                  "ToolTip Map Height:">
+<!ENTITY toolTipMapHeight.accesskey              "H">
+
+<!ENTITY useHostIP.title                         "Use HostIP Database">
+<!ENTITY useHostIP.accesskey                     "D">
+<!ENTITY useHostIPNote.title                     "Note: Using the HostIP feature involves sending the hostname of the site you visit to ">
+<!ENTITY useHostIPNoteName.title                 "hostip.info">
+
+<!ENTITY changeNotification.title                "Changes will not take effect for currently loaded documents.">
+
+<!-- Button Stuff -->
+<!ENTITY default.title                           "Defaults">
+<!ENTITY default.accesskey                       "D">
+<!ENTITY accept.accesskey                        "O">
+<!ENTITY cancel.accesskey                        "C">

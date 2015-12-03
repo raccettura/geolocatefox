@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+ <!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is GeoLocateFox.
+   -
+   - The Initial Developer of the Original Code is
+   -     Robert Accettura <robert@accettura.com>.
+   - Portions created by the Initial Developer are Copyright (C) 2006
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+<?xml-stylesheet href="chrome://geolocatefox/skin/overlay.css" type="text/css"?>
+<overlay id="geolocatefoxOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <statusbar id="status-bar">
+    <stringbundle id="strings" src="chrome://geolocatefox/locale/overlay.properties"/>
+    <script type="application/x-javascript" src="chrome://geolocatefox/content/defaults.js"/>
+    <script type="application/x-javascript" src="chrome://geolocatefox/content/utils.js"/>
+    <script type="application/x-javascript" src="chrome://geolocatefox/content/geolocatefox.js"/>
+    <script type="application/x-javascript" src="chrome://geolocatefox/content/loader.js"/>
+    <statusbarpanel id="geolocatefox-status"
+                    tooltip="geolocatefox-tooltip"
+                    ondblclick="geolocatefox_onIconClick()"
+                    onpopupshowing="geolocatefox_onMapShowing()">
+      <image src="chrome://geolocatefox/skin/img/icon-off.png" width="15" height="16" id="geolocatefox-statusicon"/>
+      <!-- XXX for some reason before_end doesn't see to have any effect  position="before_end" -->
+      <tooltip id="geolocatefox-tooltip" noautohide="true">
+        <vbox id="geolocatefoxtooltipvbox">
+          <description id="mapText"/>
+          <!-- This iframe is somewhat of a dummy at this point. -->
+          <iframe id="mapArea" type="content" flex="1" minwidth="150" minheight="150" />
+          <description id="geolocatefox-dblClickNote"/>
+        </vbox>
+      </tooltip>
+    </statusbarpanel>
+  </statusbar>
+</overlay>

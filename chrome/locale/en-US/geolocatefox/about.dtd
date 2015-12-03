@@ -1,0 +1,6 @@
+<!ENTITY copyright.title                           "Copyright (C) 2006">
+<!ENTITY projectLead.title                         "Project Lead:">
+<!ENTITY licence.title                             "Released under MPL/LGPL/GPL tri-license.">
+<!ENTITY disclaimer1.title                         "All Map Imagery copyright respective owners.">
+<!ENTITY disclaimer2.title                         "Earth image is Blue Marble By NASA.">
+<!ENTITY geolocatefoxURL                           "http://geolocatefox.mozdev.org">

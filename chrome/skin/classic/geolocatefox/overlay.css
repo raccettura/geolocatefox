@@ -1,0 +1,14 @@
+.latlong {
+  margin: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* This just looks better */
+#geolocatefox-statusicon {
+  margin-top: 1px;
+}
+
+description[value=""] {
+  display:none;
+}

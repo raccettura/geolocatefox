@@ -1,0 +1,17 @@
+<!-- note using this as .xhtml will break for yahoo as Yahoo's API doesn't seem to handle
+     being used in an xml page -->
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style type="text/css">
+      body { margin: 0; padding: 0; }
+    </style>
+    <script type="text/javascript" src="chrome://geolocatefox/content/defaults.js" />
+    <script type="text/javascript" src="chrome://geolocatefox/content/utils.js" />
+    <script type="text/javascript" src="http://api.maps.yahoo.com/ajaxymap?v=3.0&amp;appid=geolocatefox" />
+  </head>
+  <body>
+    <div id="mapContainer"></div>
+    <script type="text/javascript" src="chrome://geolocatefox/content/map.js" />
+  </body>
+</html>

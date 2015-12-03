@@ -1,0 +1,15 @@
+.bold {
+  font-weight: bold;
+}
+
+.link {
+  color: blue; 
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: bold;
+  font-size:18px;
+  text-align:center;
+}

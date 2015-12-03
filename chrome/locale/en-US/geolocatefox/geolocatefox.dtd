@@ -1,0 +1,3 @@
+<!ENTITY productName.title                           "GeoLocateFox">
+<!ENTITY vers.title                                  "0.2">
+<!ENTITY productNameVers.title                       "&productName.title; &vers.title;">

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>{3c6ae13a-b64b-444f-b77f-13c4646faabe}</em:id>
+    <em:name>GeoLocateFox</em:name>
+    <em:version>0.2</em:version>
+    <em:description>Show a websites geolocation on a map</em:description>
+    <em:creator>Robert Accettura</em:creator>
+    <em:homepageURL>http://geolocatefox.mozdev.org</em:homepageURL>
+    <em:iconURL>chrome://geolocatefox/skin/img/icon.png</em:iconURL>
+    <em:aboutURL>chrome://geolocatefox/content/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://geolocatefox/content/options.xul</em:optionsURL>
+
+    <!-- Firefox -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:maxVersion>3.0a1</em:maxVersion>
+        <em:minVersion>1.0</em:minVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Flock -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id>
+        <em:maxVersion>1.0+</em:maxVersion>
+        <em:minVersion>0.6+</em:minVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- SeaMonkey -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
+        <em:maxVersion>1.1</em:maxVersion>
+        <em:minVersion>1.0</em:minVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Mozilla -->
+    <em:targetApplication>
+      <Description>
+        <em:id>{86c18b42-e466-45a9-ae7a-9b95ba6f5640}</em:id>
+        <em:maxVersion>1.8</em:maxVersion>
+        <em:minVersion>1.7</em:minVersion>
+      </Description>
+    </em:targetApplication>
+
+    <em:file>
+      <Description about="urn:mozilla:extension:file:geolocatefox.jar">
+        <em:package>content/geolocatefox/</em:package>
+        <em:locale>locale/en-US/geolocatefox/</em:locale>
+        <em:skin>skin/classic/geolocatefox/</em:skin>
+      </Description>
+    </em:file>
+  </Description>
+</RDF>
